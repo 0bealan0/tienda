@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="vendor/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="vendor/fontawesome-free-5.15.4-web/css/all.min.css" rel="stylesheet">
+
+    <!-- Estilos CSS propios -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Favicons con https://www.favicon-generator.org/ -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Metadatos -->
+    <title>Index</title>
+    <!-- Esta etiqueta contiene la "descripción" básica de google -->
+    <meta name="description" content="Compre mis camisetas señora. Me las quitan de las manos.">
+    <!-- Hoy en día Google dice que nos los utiliza pero algunos buscadores quizás sí -->
+    <meta name="keywords" content="camisetas de algodón, camisetas de lycra, camisetas"/>
+
+    <!-- METADADATOS DE OPENGRAPH (FACEBOOK) -->
+    <meta property="og:title" content="Camisetas baratas"/>
+    <meta property="og:description" content="Compre mis camisetas señora. Me las quitan de las manos."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://camisetasbaratas.com"/>
+    <meta property="og:image" content="https://locahost...."/>
+
+    <!-- METADATOS DE TWITTER -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Camisetas baratas"/>
+    <meta name="twitter:description" content="Compre mis camisetas señora. Me las quitan de las manos."/>
+    <meta name="twitter:image" content="https://locahost..."/>
+
+</head>
+    <body>
+    <header class="fixed-top"><!-- Con la clase .fixed-top dejamos fija la cabecera siempre -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- Inicio de barra de navegación https://getbootstrap.com/docs/5.0/components/navbar/ -->
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Logo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tienda.html">Tienda</a>
+                        </li>
+                    </ul>
+                    <!-- Con la clase .ms-auto (margin-start automatico) se alinea a la derecha-->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <!-- Incluimos los iconos con FontAwesome -->
+                                <i class="d-none d-lg-inline fas fa-envelope"></i>
+                                <!-- Y con las clases .d-none .d-md-inline etc mostramos/ocultamos el icono o el texto según el tamaño de la página -->
+                                <span class="d-lg-none"> Correo</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown dropdown-menu-end">
+                            <!-- Recordad que cada menú desplegable tiene que tener su propio id -->
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="d-none d-lg-inline fas fa-user"></i>
+                                <span class="d-lg-none"> Usuario</span>
+                            </a>
+                            <!-- Montamos el menú dropdown. Añadimos la clase .dropdown-menu-end para que no se salga el menú anidado por la derecha  -->
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown2">
+                                <li><a class="dropdown-item" href="#">Adultos</a></li>
+                                <li><a class="dropdown-item" href="#">Niños</a></li>
+                                <li><a class="dropdown-item" href="#">Señoras</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--slider-->
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/images/index1.png" class="d-block w-100" alt="Formamos en tecnología">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Formamos en tecnología</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/index2.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Pensamos en tu futuro</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <!--titulo-->
+        <div class="container">
+            <h1></h1>
+            <!--primera sección con lista-->
+            <section class="row pt-4">
+                <div class="col-lg-6">
+                    <h2>Dedicación:<br>Cada alumno tutorizado</h2>
+                    <p>Todos los alumnos del <strong>CPIFP Los Enlaces</strong> son tutorizados y supervisados por el mejor elenco de profesionales en educación con un único objetivo <strong>reforzar y conseguir el mejor resultado.</strong></p>
+                    <ul class="d-none d-sm-none d-lg-block">
+                        <li>Evaluación continua</li>
+                        <li>Proyectos y trabajos fin de curso</li>
+                        <li>Prácticas en empresas</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="assets/images/index4.jpg" alt="Img first section">
+                </div>
+            </section>
+
+            <!--segunda sección con tabla-->
+            <section class="row mt-4">
+                <div class="col-lg-6">
+                    <h2>Tecnología:<br>Disciplina de estudio</h2>
+                    <p>Preparamos a todos nuestros alumnos <strong>en las más avanzadas tecnologías de comunicación.</strong>Podrás aprender cualquier tecnología puntera en nuestro centro.</p>
+                    <table class="p-2 table d-none d-sm-table">
+                        <tr>
+                            <th>Imagen y sonido</th>
+                            <td class="tabla_derecha">2016-2018</td>
+                        </tr>
+                        <tr>
+                            <th>Comercio y marketing</th>
+                            <td class="tabla_derecha">2016-2018</td>
+                        </tr>
+                        <tr>
+                            <th>Programas de gestión</th>
+                            <td class="tabla_derecha">2016-2018</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-6 order-lg-first">
+                    <img class="img-fluid" src="assets/images/index3.jpg" alt="Img second section">
+                </div>
+            </section>
+
+            <!--tercera sección con formulario-->
+            <section class="row mt-3 pt-3">
+                <div class="col-lg-6">
+                    <h2>Contacta con nosotros</h2>
+                    <p>Si tienes cualquier pregunta que quieras hacernos, concertar una cita o solicitar que te enviemos más información remítenos un mensaje y te responderemos lo antes posible.</p>
+                </div>
+                <div class="col-sm-6 pt-5">
+                    <form action="index.html" method="post">
+                        <div class="mb-3">
+                            <label class="form-label label-bold" for="name">Nombre</label>
+                            <input class="form-control" type="text" name="name" id="name" placeholder="Nombre y Apellidos">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label label-bold" for="mail">Email</label>
+                            <input class="form-control" type="email" name="email" id="mail">
+                        </div>
+                        <div class="mb-3">
+                            <label for="msj" class="label-bold form-label">Mensaje</label>
+                            <textarea class="form-control" id="msj" rows="5"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="estudios" class="form-label label-bold">Estoy interesad@ en...</label>
+                            <select name="select" class="form-select form-select-md mb-3" id="estudios">
+                                <option selected>Estudios de grado medio</option>
+                                <option value="">Estudios de grado superior</option>
+                            </select>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" name="privacidad" id="privacidad">
+                            <label class="form-check-label" for="privacidad">
+                                Estoy de acuerdo con la política de privacidad
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-light btn-outline-secondary text-dark btn-sm">Enviar</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container mt-3 mp-3">
+            <p>Copyright &copy;<strong>La tienda </strong>Calle ebro 50180 Zaragoza<br>50012 Zaragoza</p>
+        </div>
+
+    </footer>
+</body>
+</html>
